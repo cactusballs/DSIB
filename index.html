@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Don't Smoke, It's Bad</title>
+
+  </head>
+  <body>
+    <!--Nav bar and logo-->
+    <header> 
+      <div class="banner">
+        <h1>Don't Smoke, it's bad</h1>
+      <nav>
+        <a href="#about">About <span class="split">|</span></a> <!--Span here so the vertical slash remains the same colour when hovered-->
+        <a href="#signup">Sign Up <span class="split">|</span></a>
+        <a href="#tips">Tips <span class="split">|</span></a>
+        <a href="#contact">Get in touch</a>
+      </nav>
+      </div>
+    </header>
+    <!--hero image - it just looks nice, no real function lads-->
+    <div class="herobanner">
+      <img src="images/gulls.jpeg">
+      <p class="chooselife">Choose life. Choose not smelling like an ashtray. Choose your skin, choose your hair, choose your teeth, choose to keep your legs. Choose not spending your hard-earned cash on self inflicted cancer. Choose to break free from nicotine addiction and actually afford that holiday you keep telling your mates about. Choose not inflicting second hand smoke on the people you love. Choose not to pollute the seas with your cancerous debris. Choose being smug as fuck when you say you don't have a lighter. Choose your friends, choose your parents, choose your sisters and brother. Choose breathing, choose your lungs, choose your heart. Choose life.</p>
+    </div>
+    <!--about and trainspotting chooselife monologue-->
+    <section class="about">
+      <p>Don't smoke, it's bad is an SMS service that sens you daily reminders of why quitting smoking is the best thing you can do for yourself. You have the flexibility to set the frequency, time and content of your messages. It's your journey and any reason to quit smoking is a good one. In the sign up form you can input your own messagge, choose our randomiser to receive a rotating selection or have a roll of our magic eight ball and pick the one that suits you.</p>
+    
+    </section>
+
+    <section id="signup">
+      <form>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" required>
+          <label for="num">Your number</label>
+          <input type="number" name="name" id="num" required>
+      <br>
+      
+          <input type="radio" id="chooseForMe" name="answer" value="youchoose" onclick="showHideFields()">
+          <label for="chooseForMe">choose for me</label>
+          <!--text box only shows when clicked -->
+          <input type="radio" id="ichoose" name="answer" value="ichoose" onclick="showHideFields()"> 
+          <label for="ichoose">choose my own</label>
+            <!--magic eight ball only shows when clicked -->
+          <input type="radio" id="magicEightBall" name="answer" value="magicEightBall" onclick="showHideFields()">
+          <label for="magicEightBall">Consult the magic ball</label>
+      <br>
+      <!--below shows when ichoose or magiceightball are clicked-->
+        <div id="additionalFields">
+         <label for="motimessage">What message would you like us to send you?</label>
+         <textarea maxlength="150" id="motimessage" required></textarea>
+        </div>
+        <div id="additionalFieldsTwo">
+        <button alt="Magic Eight Ball" id="magicEightBallButton"  onclick="showHideFields(); generateAnswer()" >Eight Ball </button> 
+          <div id="outputDiv"> </div>
+        </div>
+        <div id="submit">
+          <button>Submit</button>
+        </div>
+      </form>
+
+    </section>
+    <main>
+      
+    </main>
+    <footer>
+      <h1>Don't Smoke, It's Bad.</h1>
+      <p> Footer here for spacing remember to change ya big eejit</p>
+    
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
