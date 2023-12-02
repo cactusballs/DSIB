@@ -68,7 +68,7 @@ body {
 /* Styling for paragraphs within the hero banner */
 
 .chooselife {
-  font-size: 20px;
+  font-size: 2vw;
   font-style: italic;
   color: #EBE0C8;
   z-index: 1;
@@ -112,4 +112,12 @@ form {
   background-color: aliceblue;
   font-size: 18px;
   height: 100%;
+}
+
+
+
+@media only screen and (mx-width: 480px) {
+  Body {
+   Font-size: 12px;
+ }
 }
