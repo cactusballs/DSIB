@@ -1,3 +1,5 @@
+
+//the 
 function showHideFields() {
   let selectedOption = document.querySelector('input[name="answer"]:checked').value;
   let additionalFields = document.getElementById("additionalFields");

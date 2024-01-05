@@ -4,7 +4,7 @@
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Don't Smoke, It's Bad</title>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
     <!--Nav bar and logo-->
@@ -31,13 +31,12 @@
     </section>
 
     <section id="signup">
-      <form>
+      <form actrion ="http://localhost:3000/submitForm" method="post" id="signupForm">
           <label for="name">Your name</label>
           <input type="text" name="name" id="name" required>
           <label for="num">Your number</label>
-          <input type="number" name="name" id="num" required>
+          <input type="number" name="num" id="num" required>
       <br>
-      
           <input type="radio" id="chooseForMe" name="answer" value="youchoose" onclick="showHideFields()">
           <label for="chooseForMe">choose for me</label>
           <!--text box only shows when clicked -->
@@ -57,7 +56,7 @@
           <div id="outputDiv"> </div>
         </div>
         <div id="submit">
-          <button>Submit</button>
+          <input type="button" value="Submit to quit!" onclick="submitForm()">
         </div>
       </form>
 
@@ -66,11 +65,11 @@
       
     </main>
     <footer>
-      <h1>Don't Smoke, It's Bad.</h1>
+      <h3>Don't Smoke, It's Bad.</h3>
       <p> Footer here for spacing remember to change ya big eejit</p>
     
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
 
